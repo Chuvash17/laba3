@@ -1,0 +1,27 @@
+echo off
+md Ivanov
+cd Ivanov
+md Aleksey
+cd Aleksey
+md Nikolaevich
+pause
+echo off
+cd Ivanov
+echo > 18121998.txt
+cd Aleksey
+echo > secondfile.txt
+cd Nikolaevich
+echo > 5.txt
+pause
+echo off
+del Ivanov /S /Q /F
+pause
+echo off
+cd Ivanov
+cd Aleksey
+rd Nikolaevich
+cd ..
+rd Aleksey
+cd ..
+rd Ivanov
+pause
